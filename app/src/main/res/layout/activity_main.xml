@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.example.alexander.tallercardview.MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:background="@drawable/musica"
+       android:padding="12dp">
+
+      <TextView
+          android:id="@+id/textview1"
+          android:layout_width="190sp"
+          android:layout_height="90sp"
+          android:text="Alexander Bermudez"
+          android:textColor="@color/colorWhite"
+          android:textSize="35sp"
+          android:textStyle="normal"/>
+   </LinearLayout>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+         <include layout="@layout/cardview1"/>
+         <include layout="@layout/cardview2"/>
+         <include layout="@layout/cardview3"/>
+         <include layout="@layout/cardview4"/>
+
+
+      </LinearLayout>
+    </ScrollView>
+   </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout
+   >
